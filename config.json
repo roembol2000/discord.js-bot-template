@@ -1,0 +1,9 @@
+{
+  "token": "",
+  "prefix": ".",
+  "botinfo": {
+    "name": "SampleBot",
+    "description": "Just a bot template!",
+    "version": "1.0"
+  }
+}
