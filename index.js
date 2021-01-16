@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const fs = require('fs');
+require('dotenv').config();
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
@@ -28,7 +29,7 @@ client.on('message', message => {
   }
 });
 
-client.login(config.token);
+client.login(process.env.TOKEN);
 
 for (const file of commandFiles) {
   const command = require(`./commands/${file}`);
